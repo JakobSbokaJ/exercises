@@ -1,0 +1,1 @@
+I think it will print "hello 0", then exit and stop the program because x = 0 and 0 < 9.
