@@ -5,7 +5,7 @@ for guest in gList:
 
 print("Sadly, Eren's mom cannot make it.")
 
-gList = ["Eren Bunul","fedy fabear","Eren's dad"]
+gList[1] = "fedy fabear"
 
 for guest in gList:
     print(f"{guest}, I am begging you to pull up to my dinner party. There will be water.")
