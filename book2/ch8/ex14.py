@@ -1,12 +1,10 @@
-def getCarInfo(manufacturer,model,color="",heated=""):
+def getCarInfo(manufacturer, model, **extraInfo):
     info = {"manufacturer":manufacturer,"model":model}
-    if color:
-        info["color"] = color
-    if heated:
-        info["heated"] = heated
+    for key, value in extraInfo.items():
+        info[key] = value
     return info
 
-carInfo = getCarInfo("Honda","Accord","blue","yes")
+carInfo = getCarInfo("Honda","Accord",color="blue",heated="yes")
 car2Info = getCarInfo("Ford","F150")
 
 print(carInfo)
