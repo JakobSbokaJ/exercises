@@ -1,10 +1,9 @@
 cities = []
-baller = True
 
-while baller:
+while True:
     city = input("Input a city name! Input 'done' to end. ")
     if city == "done":
-        baller = False
+        break
     else:
         cities.append(city)
 
