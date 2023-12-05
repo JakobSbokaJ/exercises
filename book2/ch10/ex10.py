@@ -6,7 +6,6 @@ def theAppearances(file):
     try:
         with open(file) as f_obj:
             contents = f_obj.read()
-            contents = str(contents)
     except FileNotFoundError:
         print(f"Sorry, {file} does not exist.")
     else:
